@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Водій фури на європейській машині",
+    "city": "Madrid",
+    "salary": "1300$"
+  },
+  {
+    "id": 2,
+    "title": "Водій автобуса",
+    "city": "Madrid",
+    "salary": "300$"
+  },
+  {
+    "id": 3,
+    "title": "Працівник в дитячому садку",
+    "city": "Madrid",
+    "salary": "8000$"
+  },
+  {
+    "id": 4,
+    "title": "Помічник інженера",
+    "city": "Madrid",
+    "salary": "800$"
+  },
+  {
+    "id": 5,
+    "title": "Водій-механік",
+    "city": "Madrid",
+    "salary": "2000$"
+  },
+  {
+    "id": 6,
+    "title": "Будівельник",
+    "city": "Madrid",
+    "salary": "800$"
+  },
+  {
+    "id": 7,
+    "title": "Повар",
+    "city": "Madrid",
+    "salary": "2000$"
+  },
+  {
+    "id": 8,
+    "title": "Викладач історії",
+    "city": "Madrid",
+    "salary": "2000$"
+  },
+  {
+    "id": 9,
+    "title": "Інженер комп’ютерних наук",
+    "city": "Madrid",
+    "salary": "2000$"
+  },
+  {
+    "id": 10,
+    "title": "Водій - механік",
+    "city": "Madrid",
+    "salary": "2000$"
+  }
+]

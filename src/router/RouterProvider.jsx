@@ -4,15 +4,21 @@ import HomePage from "../pages/HomePage.";
 import VacancyDetailPage from "../pages/VacancyDetailPage";
 
 const RouterProvider = () => {
-    const paths = {
-        home: '/',
-        vacancy: 'vacancy'
-    }
+
     return (
         <Routes>
-            <Route path={ paths.home } element={ <HomePage /> } />
-            <Route path={`${paths.vacancy}/:id`} element={ <VacancyDetailPage /> } />
-            <Route path='/*' element={ <Navigate replace to={ paths.home } /> } />
+            <Route
+                path={ '/home' }
+                element={ <HomePage /> }
+            />
+            <Route
+                path={ '/vacancy/:id' }
+                element={ <VacancyDetailPage /> }
+            />
+            <Route
+                path={ '/*' }
+                element={ <Navigate replace to={ '/home' } /> }
+            />
         </Routes>
     );
 };

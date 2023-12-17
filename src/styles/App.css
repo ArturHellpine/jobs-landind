@@ -214,6 +214,43 @@ body {
     border: 2px solid transparent;
 }
 
+.vacancyModal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.vacancyModal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.vacancyModalContent {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.5);
+    transition: 0.2s all;
+}
+
+.vacancyModalContent.active {
+    transform: scale(1);
+}
+
+
 .footer {
     background: #313335;
     padding: 20px;

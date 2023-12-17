@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {countries} from "../constants/countries";
 import JobList from "../components/JobList";
 import JobsService from "../api/JobsService";

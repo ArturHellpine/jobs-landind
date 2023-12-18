@@ -24,6 +24,7 @@ body {
     height: 100vh;
     background: url("../images/mount.jpg") center no-repeat;
     background-size: cover;
+    background-color: #4B433F;
 }
 
 .intro_inner {
@@ -239,7 +240,6 @@ body {
     height: 500px; /* or max-content and delete absolute in button*/
     border-radius: 5px;
     background-color: #edf1f5;
-    border: 1px solid white;
     margin: 10px 20px;
     padding: 20px;
     color: black;
@@ -312,6 +312,61 @@ body {
     color: white;
     opacity: 1;
     border: 2px solid transparent;
+}
+
+.contact_page {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/mount.jpg") center no-repeat;
+    background-size: cover;
+    background-color: #4B433F;
+}
+
+.contacts_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    outline: none;
+    background: rgba(75, 67, 63, 0.3);
+    padding: 50px;
+}
+
+.input {
+    background: transparent;
+    border: 1px solid black;
+    width: 300px;
+    padding: 15px 20px;
+    margin: 5px 0;
+    outline: none;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+.submit_contact_btn {
+    margin-top: 5px;
+    width: 300px;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 16px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.submit_contact_btn:hover{
+    border: 1px solid transparent;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: #edf1f5;
 }
 
 

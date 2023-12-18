@@ -22,9 +22,11 @@ const FullVacancyModal = ({ visible, setVisible, vacancy }) => {
                 Salary - <span className='full_vacancy_salary'>{vacancy.salary}</span>
                 <div className='full_vacancy_text'>
                     {vacancy.text}
+                        <p>{vacancy.option1}</p>
+                        <p>{vacancy.option2}</p>
+                        <p>{vacancy.option3}</p>
+                        <p>{vacancy.option4}</p>
                 </div>
-                <p>{vacancy.option1}</p>
-                <p>{vacancy.option2}</p>
                 <button className='full_vacancy_button' onClick={() => navigate('/contact')}>Apply Now</button>
             </div>
         </div>

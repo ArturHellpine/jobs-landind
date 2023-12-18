@@ -9,9 +9,4 @@ export default class JobsService {
             return axios.get('./vacancies/poland.json')
         }
     }
-
-    static async getVacancyById(id) {
-        return axios.get(`../vacancies/spain.json/${id}`)
-    }
-
 }

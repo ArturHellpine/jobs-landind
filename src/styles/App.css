@@ -10,7 +10,7 @@
 body {
     line-height: 1.6;
     font-size: 16px;
-    background: #F4F5F6;
+    background: #edf1f5;
 }
 
 .container {
@@ -235,15 +235,20 @@ body {
 }
 
 .vacancyModalContent {
+    width: 500px;
+    height: 360px;
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    margin: 10px 20px;
     padding: 20px;
-    border-radius: 12px;
-    background-color: white;
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    transform: scale(0.5);
-    transition: 0.2s all;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.closeIcon {
+    cursor: pointer;
 }
 
 .vacancyModalContent.active {

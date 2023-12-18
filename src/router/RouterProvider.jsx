@@ -1,10 +1,9 @@
 import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
 import HomePage from "../pages/HomePage.";
-import VacancyDetailPage from "../pages/VacancyDetailPage";
+import ContactFormPage from "../pages/ContactFormPage";
 
 const RouterProvider = () => {
-
     return (
         <Routes>
             <Route
@@ -12,8 +11,8 @@ const RouterProvider = () => {
                 element={ <HomePage /> }
             />
             <Route
-                path={ '/vacancy/:id' }
-                element={ <VacancyDetailPage /> }
+                path={ '/contact' }
+                element={ <ContactFormPage /> }
             />
             <Route
                 path={ '/*' }

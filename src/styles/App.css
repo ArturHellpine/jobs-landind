@@ -236,8 +236,9 @@ body {
 
 .vacancyModalContent {
     width: 500px;
-    height: 360px;
-    background-color: #FFFFFF;
+    height: 500px; /* or max-content and delete absolute in button*/
+    border-radius: 5px;
+    background-color: #edf1f5;
     border: 1px solid white;
     margin: 10px 20px;
     padding: 20px;
@@ -247,12 +248,70 @@ body {
     transition: transform 0.3s;
 }
 
+.vacancyModalContent.active {
+    transform: scale(1);
+}
+
+.full_vacancy_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .closeIcon {
     cursor: pointer;
 }
 
-.vacancyModalContent.active {
-    transform: scale(1);
+.full_vacancy_title {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.full_vacancy_salary {
+    font-weight: bold;
+    align-items: flex-end;
+    border-bottom: 1px solid #4B433F;
+    display: flex;
+    width: max-content;
+    font-size: 16px;
+}
+
+.full_vacancy_text {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.full_vacancy_button {
+    width: 50%;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 2px solid #4B433F;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #4B433F;
+    color: white;
+    opacity: 0.9;
+    transition: 0.3s;
+    outline: none;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.full_vacancy_button:hover {
+    color: white;
+    opacity: 1;
+    border: 2px solid transparent;
 }
 
 

@@ -10,7 +10,7 @@ const FullVacancyModal = ({ visible, setVisible, vacancy }) => {
     return (
         <div className={visible ? 'vacancyModal active' : 'vacancyModal'} onClick={() => setVisible(false)}>
             <div className={visible ? 'vacancyModalContent active' : 'vacancyModalContent'} onClick={e => e.stopPropagation()}>
-                <div className='vacancy_header'>
+                <div className='full_vacancy_header'>
                     <span>
                         <img className='location_icon' src={location} alt="" width={ 15 } />
                         {vacancy.city}
@@ -18,11 +18,14 @@ const FullVacancyModal = ({ visible, setVisible, vacancy }) => {
                     <img onClick={() => setVisible(false)} className='closeIcon' src={closeIcon} alt="" width={22}/>
                 </div>
                 <img className='job_icon' src={jobIcon} alt="" width={ 25 } height={ 22 } />
-                <span className='vacancy_title'>{vacancy.title}</span> <br/>
-                Salary - <span className='vacancy_salary'>{vacancy.salary}</span>
+                <span className='full_vacancy_title'>{vacancy.title}</span> <br/>
+                Salary - <span className='full_vacancy_salary'>{vacancy.salary}</span>
+                <div className='full_vacancy_text'>
+                    {vacancy.text}
+                </div>
                 <p>{vacancy.option1}</p>
                 <p>{vacancy.option2}</p>
-                <button className='button' onClick={() => navigate('/contact')}>Apply Now</button>
+                <button className='full_vacancy_button' onClick={() => navigate('/contact')}>Apply Now</button>
             </div>
         </div>
     );

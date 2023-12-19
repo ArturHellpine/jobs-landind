@@ -12,17 +12,49 @@ const ContactFormPage = () => {
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset()
     }
 
     return (
         <div className='contact_page'>
             <form onSubmit={sendEmail} ref={formRef} className='contacts_form'>
-                <h1>Fill out the application and we will call you!</h1>
-                <input name='user_name' className='input' type="text" placeholder='Full Name'/>
-                <input name='user_email' className='input' type="email" placeholder='Email'/>
-                <input className='input' type="text" placeholder='Phone Number'/>
-                <textarea style={{maxWidth: '300px', maxHeight: '100px'}} className='input' name="" id="" cols="30" rows="3" placeholder='What a vacancy you liked?'></textarea>
+                <h4 className='contact_form_title'>
+                    Please enter your contacts
+                </h4>
+
+                <label className='contact_label'>Name</label>
+                <input
+                    name='user_name'
+                    className='input'
+                    type="text"
+                    placeholder='Full Name'
+                    required
+                />
+
+                <label className='contact_label'>Email</label>
+                <input
+                    name='user_email'
+                    className='input'
+                    type="email"
+                    placeholder='E-Email'
+                    required
+                />
+
+                <label className='contact_label'>Phone Number</label>
+                <input
+                    name='user_phone'
+                    className='input'
+                    type="text"
+                    placeholder='Phone Number'
+                    required
+                />
+
+                <label className='contact_label'>What vacancy you interested?</label>
+                <input
+                    required
+                    className='input'
+                    name="message"
+                    placeholder='Write message...'
+                 />
                 <button className='submit_contact_btn button'>Send Contacts</button>
             </form>
         </div>

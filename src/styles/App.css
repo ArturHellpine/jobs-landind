@@ -25,6 +25,7 @@ body {
     background: url("../images/mount.jpg") center no-repeat;
     background-size: cover;
     background-color: #4B433F;
+    padding: 0 15px;
 }
 
 .intro_inner {
@@ -52,7 +53,7 @@ body {
     line-height: 1.7;
     border-radius: 3px;
     color: black;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     width: max-content;
@@ -113,6 +114,10 @@ body {
 
 .country_buttons {
     padding: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .jobs_title {
@@ -376,11 +381,15 @@ body {
     align-items: center;
 }
 
+.input_item {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact_label {
     color: white;
     font-size: 14px;
     align-self: flex-start;
-    padding: 0 30px;
     font-weight: 400;
 }
 .socials {
@@ -409,7 +418,7 @@ body {
 }
 
 .submit_contact_btn {
-    margin-top: 15px;
+    margin-top: 0px;
     width: 400px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
@@ -505,6 +514,7 @@ body {
     background: rgba(0, 0, 0, 1);
 }
 
+
 .footer {
     background: #141414;
     padding: 20px;
@@ -512,4 +522,134 @@ body {
     width: 100%;
     text-align: center;
     font-size: 18px;
+}
+
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 70px;
+        padding: 30px 0;
+    }
+    .vacancies_title {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+    .country_buttons {
+        padding: 10px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .jobs_inner {
+        padding-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .contacts_form {
+        max-width: 400px;
+    }
+    .back_button {
+        width: 100px;
+    }
+    .contact_form_title {
+        width: 300px;
+    }
+    .input_item {
+        display: flex;
+    }
+    .input {
+        width: 300px;
+        display: flex;
+        margin: 8px 0 22px 0;
+    }
+    .submit_contact_btn {
+        width: 300px;
+    }
+}
+
+@media(max-width: 750px) {
+    .jobs_inner {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .vacancy_title {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+    .job_item {
+        height: 220px;
+    }
+    .contacts_form {
+        max-width: 350px;
+    }
+    .contact_form_title {
+        width: 250px;
+        font-size: 14px;
+    }
+    .contact_label {
+        font-size: 12px;
+    }
+    .input_item {
+        display: flex;
+    }
+    .input {
+        width: 250px;
+        display: flex;
+        margin: 8px 0 18px 0;
+    }
+    .submit_contact_btn {
+        width: 250px;
+    }
+    .back_button {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 60px;
+        padding: 70px 0 40px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .intro_contacts {
+        width: 300px;
+        padding: 5px 2px;
+    }
+    .jobs_title {
+        padding: 20px;
+    }
+    .jobs_inner {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .vacancies_title {
+        font-size: 22px;
+    }
+    .vacancy_title {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+    .job_item {
+        width: 80%;
+        height: 220px;
+    }
+    .input {
+        width: 250px;
+        display: flex;
+        margin: 15px 0 25px 0;
+    }
+    .success_text {
+        text-align: center;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .back_button {
+        display: none;
+    }
 }

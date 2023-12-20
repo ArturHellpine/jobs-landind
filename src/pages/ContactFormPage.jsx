@@ -34,40 +34,48 @@ const ContactFormPage = () => {
                     <img src={contactIcon} className='contact_icon' alt=""/>
                 </h4>
 
-                <label className='contact_label'>Name</label>
-                <input
-                    name='user_name'
-                    className='input'
-                    type="text"
-                    placeholder='Full name'
-                    required
-                />
+                <div className='input_item'>
+                    <label className='contact_label'>Name</label>
+                    <input
+                        name='user_name'
+                        className='input'
+                        type="text"
+                        placeholder='Full name'
+                        required
+                    />
+                </div>
 
-                <label className='contact_label'>Email</label>
-                <input
-                    name='user_email'
-                    className='input'
-                    type="email"
-                    placeholder='E-Email'
-                    required
-                />
+                <div className='input_item'>
+                    <label className='contact_label'>Email</label>
+                    <input
+                        name='user_email'
+                        className='input'
+                        type="email"
+                        placeholder='E-Email'
+                        required
+                    />
+                </div>
 
-                <label className='contact_label'>Phone Number <span className='socials'>(Viber, Telegram, WhatsApp)</span></label>
-                <input
-                    name='user_phone'
-                    className='input'
-                    type="text"
-                    placeholder='Phone number'
-                    required
-                />
+                <div className='input_item'>
+                    <label className='contact_label'>Phone Number <span className='socials'>(Viber, Telegram, WhatsApp)</span></label>
+                    <input
+                        name='user_phone'
+                        className='input'
+                        type="text"
+                        placeholder='Phone number'
+                        required
+                    />
+                </div>
 
-                <label className='contact_label'>What job interested you?</label>
-                <input
-                    required
-                    className='input'
-                    name="message"
-                    placeholder='Write message...'
-                 />
+                <div className='input_item'>
+                    <label className='contact_label'>What job interested you?</label>
+                    <input
+                        required
+                        className='input'
+                        name="message"
+                        placeholder='Write message...'
+                    />
+                </div>
                 <button className='submit_contact_btn button'>
                     <span>Send Contacts</span>
                     <img src={sendIcon} className='sendIcon' alt=""/>

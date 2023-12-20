@@ -29,7 +29,7 @@ const JobList = ({ vacancies, country }) => {
                         </div>
                         <img className='job_icon' src={ jobIcon } alt="" width={ 25 } height={ 22 } />
                         <span className='vacancy_title'>{ vacancy.title }</span>
-                        <button className='apply_button' onClick={() => showFullVacancyModal(vacancy)}>Show Details</button>
+                        <button className='show_details_button' onClick={() => showFullVacancyModal(vacancy)}>Show Details</button>
                     </div>
                 )}
             </div>

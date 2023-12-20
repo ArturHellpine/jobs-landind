@@ -1,8 +1,13 @@
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import {useNavigate} from "react-router-dom";
+import arrowBack from '../images/arrow-back-long-svgrepo-com.svg'
+import sendIcon from '../images/send-svgrepo-com.svg'
+import contactIcon from '../images/contacts-alt-svgrepo-com.svg'
 
 const ContactFormPage = () => {
     const formRef = useRef()
+    const navigate = useNavigate()
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -12,13 +17,21 @@ const ContactFormPage = () => {
             }, (error) => {
                 console.log(error.text);
             });
+        e.target.reset()
+        navigate('/success')
     }
 
     return (
         <div className='contact_page'>
+            <div className='single_div'></div>
+            <button className='back_button button' onClick={() => navigate('/home')}>
+                <img src={arrowBack} className='arrowBack' alt=""/>
+                <span>Back</span>
+            </button>
             <form onSubmit={sendEmail} ref={formRef} className='contacts_form'>
                 <h4 className='contact_form_title'>
-                    Please enter your contacts
+                    <span>Send Your contacts</span>
+                    <img src={contactIcon} className='contact_icon' alt=""/>
                 </h4>
 
                 <label className='contact_label'>Name</label>
@@ -26,7 +39,7 @@ const ContactFormPage = () => {
                     name='user_name'
                     className='input'
                     type="text"
-                    placeholder='Full Name'
+                    placeholder='Full name'
                     required
                 />
 
@@ -39,23 +52,26 @@ const ContactFormPage = () => {
                     required
                 />
 
-                <label className='contact_label'>Phone Number</label>
+                <label className='contact_label'>Phone Number <span className='socials'>(Viber, Telegram, WhatsApp)</span></label>
                 <input
                     name='user_phone'
                     className='input'
                     type="text"
-                    placeholder='Phone Number'
+                    placeholder='Phone number'
                     required
                 />
 
-                <label className='contact_label'>What vacancy you interested?</label>
+                <label className='contact_label'>What job interested you?</label>
                 <input
                     required
                     className='input'
                     name="message"
                     placeholder='Write message...'
                  />
-                <button className='submit_contact_btn button'>Send Contacts</button>
+                <button className='submit_contact_btn button'>
+                    <span>Send Contacts</span>
+                    <img src={sendIcon} className='sendIcon' alt=""/>
+                </button>
             </form>
         </div>
     );

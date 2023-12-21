@@ -320,7 +320,7 @@ body {
 .full_vacancy_option {
     font-size: 16px;
     line-height: 1.8;
-    text-decoration: underline .8px;
+    text-decoration: underline;
     padding: 4px 0;
 }
 
@@ -621,7 +621,8 @@ body {
         padding: 5px 2px;
     }
     .jobs_title {
-        padding: 20px;
+        padding: 50px 15px 30px 15px;
+        font-size: 26px;
     }
     .jobs_inner {
         display: flex;
@@ -630,6 +631,15 @@ body {
     }
     .vacancies_title {
         font-size: 22px;
+        color: #141414;
+    }
+    .country_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 40%;
+        font-size: 12px;
     }
     .vacancy_title {
         font-size: 12px;

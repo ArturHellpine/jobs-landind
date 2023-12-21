@@ -24,7 +24,7 @@ const HomePage = () => {
                         <div className='country_buttons'>
                             {countries.map(country =>
                                 <Link
-                                    className='button'
+                                    className='button country_btn'
                                     onClick={() => fetchVacancies(country)}
                                     key={country.name}
                                     to='jobs_inner'

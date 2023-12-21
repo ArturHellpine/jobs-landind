@@ -36,7 +36,10 @@ const HomePage = () => {
                                 </Link>
                             )}
                         </div>
-                        <JobList vacancies={vacancies} country={country} />
+                        { !vacancies.length && country ?
+                            <p className='no_vacancies_title'>No active vacancies in <span className='no_vacancy_country'>{country}</span></p>
+                            : <JobList vacancies={vacancies} country={country} />
+                        }
                     </div>
                 </div>
             <Footer />

@@ -662,16 +662,16 @@ body {
 
 @media (max-width: 450px) {
     .title {
-        margin-bottom: 10px;
-        font-size: 60px;
-        font-style: revert;
-        padding: 70px 0 40px 0;
+        margin-bottom: 5px;
+        font-size: 55px;
+        padding: 50px 0 40px 0;
         line-height: 1.2;
+        font-style: oblique;
     }
     .intro_flag {
-        display: inline-block;
-        width: 50px;
-        height: 45px;
+        display: initial;
+        width: 40px;
+        height: 40px;
     }
     .intro_contacts {
         width: max-content;

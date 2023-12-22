@@ -686,6 +686,10 @@ body {
         padding: 10px 3px;
         font-size: 14px;
         border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .intro_contact_item {
+        padding: 10px 0;
     }
     .intro_select_icon {
         width: 28px;

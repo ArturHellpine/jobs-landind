@@ -43,6 +43,7 @@ body {
     opacity: 0.7;
     color: black;
     text-decoration: underline 3px;
+
 }
 
 .intro_flag {
@@ -665,6 +666,7 @@ body {
         font-size: 60px;
         font-style: revert;
         padding: 70px 0 40px 0;
+        line-height: 1.2;
     }
     .intro_flag {
         display: inline-block;
@@ -675,10 +677,10 @@ body {
         width: max-content;
         padding: 15px 10px;
         font-size: 14px;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     .intro_select_icon {
-        width: 22px;
+        width: 25px;
     }
     .jobs_title {
         padding: 50px 18px 10px 18px;

@@ -45,8 +45,7 @@ body {
 }
 
 .intro_title_text {
-    text-decoration: underline 2px;
-    text-underline-position: under;
+    text-shadow: #141414 -5px 5px 20px;
 }
 
 .intro_flag {
@@ -667,10 +666,14 @@ body {
 @media (max-width: 450px) {
     .title {
         margin-bottom: 5px;
-        font-size: 55px;
+        font-size: 65px;
         padding: 50px 0 40px 0;
         line-height: 1.2;
-        font-style: oblique;
+        /*font-style: oblique;*/
+    }
+    .intro_title_text {
+        /*text-decoration: underline 2px;*/
+        /*text-underline-position: under;*/
     }
     .intro_flag {
         display: initial;
@@ -680,12 +683,12 @@ body {
     }
     .intro_contacts {
         width: max-content;
-        padding: 15px 5px;
+        padding: 10px 3px;
         font-size: 14px;
-        margin-bottom: 150px;
+        border-radius: 5px;
     }
     .intro_select_icon {
-        width: 25px;
+        width: 28px;
     }
     .jobs_title {
         padding: 50px 18px 10px 18px;

@@ -48,6 +48,7 @@ body {
 
 .intro_flag {
     width: 90px;
+    margin-left: 20px;
 }
 
 .intro_contacts {
@@ -667,17 +668,19 @@ body {
         padding: 50px 0 40px 0;
         line-height: 1.2;
         font-style: oblique;
+        text-decoration: underline 3px;
     }
     .intro_flag {
         display: initial;
         width: 40px;
         height: 40px;
+        margin-left: 15px;
     }
     .intro_contacts {
         width: max-content;
         padding: 15px 10px;
         font-size: 14px;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
     .intro_select_icon {
         width: 25px;

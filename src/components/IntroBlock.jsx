@@ -8,7 +8,10 @@ const IntroBlock = () => {
         <div className='intro'>
             <div className='container'>
                 <div className='intro_inner'>
-                    <h1 className='title'>Работа в Европе <img src={globe} className='intro_flag' alt=""/></h1>
+                    <h1 className='title'>
+                        <span>Работа в Европе</span>
+                        <img src={globe} className='intro_flag' alt=""/>
+                    </h1>
                 </div>
                 <div className='intro_contacts'>
                     <p className='intro_contact_item'>

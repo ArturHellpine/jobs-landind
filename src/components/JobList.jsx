@@ -15,7 +15,7 @@ const JobList = ({ vacancies, country }) => {
     return (
         <>
             { country &&
-                <h1 className='jobs_title'>Available vacancies in <span className='title_country'>{country}</span></h1>
+                <h1 className='jobs_title'>Активные вакансии в <span className='title_country'>{country} ({vacancies.length})</span></h1>
             }
             <div className='jobs_inner'>
                 {vacancies.map(vacancy =>
@@ -29,7 +29,7 @@ const JobList = ({ vacancies, country }) => {
                         </div>
                         <img className='job_icon' src={ jobIcon } alt="" width={ 25 } height={ 22 } />
                         <span className='vacancy_title'>{ vacancy.title }</span>
-                        <button className='show_details_button' onClick={() => showFullVacancyModal(vacancy)}>Show Details</button>
+                        <button className='show_details_button' onClick={() => showFullVacancyModal(vacancy)}>Детальнее</button>
                     </div>
                 )}
             </div>

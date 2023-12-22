@@ -15,12 +15,13 @@ const HomePage = () => {
         setVacancies(response.data)
         setCountry(country.name)
     }
+
     return (
         <>
             <IntroBlock />
                 <div className='container'>
                     <div className='vacancies'>
-                        <h1 className='vacancies_title'>Choose the country where you are looking for a job</h1>
+                        <h1 className='vacancies_title'>Выберите страну где хотите работать</h1>
                         <div className='country_buttons'>
                             {countries.map(country =>
                                 <Link
@@ -37,7 +38,7 @@ const HomePage = () => {
                             )}
                         </div>
                         { !vacancies.length && country ?
-                            <p className='no_vacancies_title'>No active vacancies in <span className='no_vacancy_country'>{country}</span></p>
+                            <p className='no_vacancies_title'>Нет активных вакансий в <span className='no_vacancy_country'>{country}</span></p>
                             : <JobList vacancies={vacancies} country={country} />
                         }
                     </div>

@@ -35,7 +35,7 @@ const FullVacancyModal = ({ visible, setVisible, vacancy }) => {
                         )}
                     </ul>
                 </div>
-                <button className='full_vacancy_apply_button' onClick={() => navigate('/contact')}>Apply Now</button>
+                <button className='full_vacancy_apply_button' onClick={() => navigate('/contact')}>Подать заявку</button>
             </div>
         </div>
     );

@@ -9,9 +9,9 @@ const SuccessPage = () => {
     return (
         <div className='success_page'>
             <Result status={"success"} style={{marginBottom: '-50px'}} />
-            <h2 className='success_text'>Success! We have received Your contacts</h2>
+            <h2 className='success_text'>Заявка отправлена! <br/> Мы ответим вам в течение дня</h2>
             <button className='success_btn button' onClick={() => navigate('/home')}>
-                <span>close</span>
+                <span>Закрыть</span>
                 <img src={selectIcon} className='selectIcon' alt=""/>
             </button>
         </div>

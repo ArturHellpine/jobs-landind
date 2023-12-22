@@ -38,25 +38,46 @@ body {
     margin-bottom: 25px;
     font-size: 110px;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: left;
     line-height: 1.1;
     opacity: 0.7;
     color: black;
+    text-decoration: underline 4px;
+}
+
+.intro_flag {
+    width: 90px;
 }
 
 .intro_contacts {
     padding: 20px 30px;
     font-size: 22px;
-    text-decoration: underline;
     font-weight: 500;
     line-height: 1.7;
     border-radius: 3px;
     color: black;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     width: max-content;
+}
+
+.intro_contact_item {
+    width: max-content;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.intro_select_icon {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.intro_contact_item:last-child {
+    padding-bottom: 0;
 }
 
 .button {
@@ -332,6 +353,7 @@ body {
     font-size: 16px;
     line-height: 1.8;
     text-decoration: underline;
+    text-underline-position: under;
     padding: 4px 0;
 }
 
@@ -504,6 +526,7 @@ body {
 
 .success_text {
     font-weight: 400;
+    text-align: center;
 }
 
 .success_btn {
@@ -559,6 +582,9 @@ body {
 }
 
 @media(max-width: 1000px) {
+    .intro_flag {
+        display: none;
+    }
     .contacts_form {
         max-width: 400px;
     }
@@ -582,6 +608,19 @@ body {
 }
 
 @media(max-width: 750px) {
+    .title {
+        font-size: 40px;
+    }
+    .intro_contacts {
+        font-size: 14px;
+    }
+    .intro_flag {
+        width: 50px;
+    }
+    .intro_select_icon {
+        width: 26px;
+        padding-right: 5px;
+    }
     .jobs_inner {
         display: flex;
         width: 100%;
@@ -622,18 +661,29 @@ body {
 
 @media (max-width: 450px) {
     .title {
+        margin-bottom: 0;
         font-size: 60px;
-        padding: 70px 0 40px 0;
-        display: flex;
-        flex-direction: column;
+        font-style: revert;
+        padding: 40px 0 40px 0;
+        text-decoration: underline 2px;
+    }
+    .intro_flag {
+        display: inline-block;
+        width: 50px;
+        height: 45px;
     }
     .intro_contacts {
-        width: 300px;
-        padding: 5px 2px;
+        width: max-content;
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+    .intro_select_icon {
+        width: 22px;
     }
     .jobs_title {
-        padding: 50px 15px 30px 15px;
-        font-size: 26px;
+        padding: 50px 18px 10px 18px;
+        font-size: 18px;
+        font-weight: 400;
     }
     .jobs_inner {
         display: flex;
@@ -642,8 +692,8 @@ body {
         padding-top: 20px;
     }
     .no_vacancies_title {
-        font-size: 24px;
-        padding: 30px 0 10px 0;
+        font-size: 18px;
+        padding: 30px 8px 10px 8px;
     }
     .vacancies {
         padding: 30px 0;
@@ -671,7 +721,7 @@ body {
     .input {
         width: 250px;
         display: flex;
-        margin: 15px 0 25px 0;
+        margin: 10px 0 25px 0;
     }
     .success_text {
         text-align: center;

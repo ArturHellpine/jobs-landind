@@ -1,10 +1,10 @@
 export const countries = [
-    { id: 1, name: 'Spain' },
-    { id: 2, name: 'Poland' },
-    { id: 3, name: 'Germany' },
-    { id: 4, name: 'Czech Republic' },
-    { id: 5, name: 'France' },
-    { id: 6, name: 'Italy' },
-    { id: 7, name: 'Slovakia' },
-    { id: 8, name: 'Latvia' },
+    { id: 1, name: 'Испания' },
+    { id: 2, name: 'Польша' },
+    { id: 3, name: 'Германия' },
+    { id: 4, name: 'Чехия', secondName: 'Чехии' },
+    { id: 5, name: 'Франция' },
+    { id: 6, name: 'Италия' },
+    { id: 7, name: 'Словакия' },
+    { id: 8, name: 'Латвия' },
 ]

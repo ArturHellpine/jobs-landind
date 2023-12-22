@@ -1,21 +1,31 @@
 import React from 'react';
 import { Link } from 'react-scroll'
+import globe from '../images/globe-showing-europe-africa-svgrepo-com.svg'
+import select from '../images/dark-select-svgrepo-com.svg'
 
 const IntroBlock = () => {
     return (
         <div className='intro'>
             <div className='container'>
                 <div className='intro_inner'>
-                    <h1 className='title'>Work in Europe</h1>
+                    <h1 className='title'>Работа в Европе <img src={globe} className='intro_flag' alt=""/></h1>
                 </div>
                 <div className='intro_contacts'>
-                    <p>Iryna Bey - (+1 123 333 189)</p>
-                    <p>Viber - (+1 123 333 189)</p>
-                    <p>WatsApp - (+1 123 333 189)</p>
-                    <p>iryna.bey@gmail.com</p>
+                    <p className='intro_contact_item'>
+                        <img src={select} className='intro_select_icon' alt=""/>
+                        Получение документов за 1 день
+                    </p>
+                    <p className='intro_contact_item'>
+                        <img src={select} className='intro_select_icon' alt=""/>
+                        Для регистрации приезд не нужен
+                    </p>
+                    <p className='intro_contact_item'>
+                        <img src={select} className='intro_select_icon' alt=""/>
+                        Приезд только в день получения документов
+                    </p>
                 </div>
                 <Link className='button intro_btn' to='vacancies' spy={true} smooth={true} offset={50} duration={1000}>
-                    View Vacancies
+                    Смотреть вакансии
                 </Link>
             </div>
         </div>

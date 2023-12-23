@@ -25,7 +25,6 @@ const JobList = ({ vacancies, country }) => {
                                 <img className='location_icon' src={ location } alt="" width={ 15 } />
                                 { vacancy.city }
                             </span>
-                            <span className='vacancy_salary'>{ vacancy.salary }</span>
                         </div>
                         <img className='job_icon' src={ jobIcon } alt="" width={ 25 } height={ 22 } />
                         <span className='vacancy_title'>{ vacancy.title }</span>

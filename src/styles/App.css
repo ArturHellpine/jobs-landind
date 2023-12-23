@@ -131,6 +131,7 @@ body {
     text-align: center;
     line-height: 1.4;
     color: #141414;
+    text-shadow: #141414 -5px 5px 25px;
 }
 
 .country_buttons {
@@ -151,7 +152,8 @@ body {
 
 .title_country {
     border-bottom: 1px solid #4B433F;
-    font-weight: 700;
+    font-weight: 500;
+    text-shadow: #141414 -5px 5px 30px;
 }
 
 .no_vacancies_title {
@@ -188,9 +190,9 @@ body {
     transition: transform 0.3s;
 }
 
-/*.job_item:hover {*/
-/*    transform: scale(1.01);*/
-/*}*/
+.job_item:hover {
+    transform: scale(1.01);
+}
 
 .vacancy_header {
     display: flex;
@@ -323,7 +325,7 @@ body {
 
 .full_vacancy_text_title {
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     color: #141414;
     margin: 10px 0;
@@ -343,6 +345,7 @@ body {
 .full_vacancy_main_text {
     font-weight: 300;
     font-size: 16px;
+    line-height: 1.4;
 }
 
 .full_vacancy_options_list {
@@ -548,14 +551,26 @@ body {
     background: rgba(0, 0, 0, 1);
 }
 
-
 .footer {
     background: #141414;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     color: #F4F5F6;
     width: 100%;
     text-align: center;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer_item {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    padding-top: 10px;
+    font-size: 14px;
+    color: gray;
 }
 
 
@@ -572,6 +587,9 @@ body {
         padding: 10px 0 0 0;
         display: flex;
         flex-wrap: wrap;
+    }
+    .title_country {
+        text-shadow: #141414 -5px 5px 25px;
     }
     .jobs_inner {
         padding-top: 50px;
@@ -657,6 +675,12 @@ body {
     .back_button {
         display: none;
     }
+    .footer {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -684,6 +708,9 @@ body {
     }
     .intro_select_icon {
         width: 26px;
+    }
+    .title_country {
+        text-shadow: #141414 -5px 5px 20px;
     }
     .jobs_title {
         padding: 50px 18px 10px 18px;
@@ -715,6 +742,7 @@ body {
         width: 40%;
         font-size: 12px;
     }
+
     .vacancy_title {
         font-size: 12px;
         line-height: 1.1;
@@ -735,6 +763,9 @@ body {
     }
     .back_button {
         display: none;
+    }
+    .footer {
+        font-size: 14px;
     }
 }
 
@@ -784,5 +815,11 @@ body {
     }
     .input {
         max-width: 250px;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .copyright {
+        font-size: 10px;
     }
 }

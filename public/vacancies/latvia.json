@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Водій фури на європейській машині",
+    "city": "Madrid",
+    "salary": "1300$",
+    "text": "There will be a text that briefly describes the vacancy, working conditions, and all necessary documents for placement",
+    "details": [
+      {
+        "id": "1",
+        "option": "Обовязкові водійські права"
+      },
+      {
+        "id": "2",
+        "option": "Обовязкова страховка"
+      },
+      {
+        "id": "3",
+        "option": "Обовязкова медична карта"
+      },
+      {
+        "id": "4",
+        "option": "Обовязкова категорія на вантажний автомобіль"
+      },
+      {
+        "id": "5",
+        "option": "Обовязковий досвід роботи на даній посаді"
+      }
+    ]
+  }
+]

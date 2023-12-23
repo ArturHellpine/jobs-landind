@@ -2,6 +2,7 @@ import React from 'react';
 import closeIcon from '../images/close-svgrepo-com.svg'
 import location from "../images/location-pin-svgrepo-com.svg";
 import jobIcon from "../images/employee-id-svgrepo-com.svg";
+
 import {useNavigate} from "react-router-dom";
 
 const FullVacancyModal = ({ visible, setVisible, vacancy }) => {
@@ -23,19 +24,21 @@ const FullVacancyModal = ({ visible, setVisible, vacancy }) => {
                         {vacancy.title}
                     </span>
                     <span className='full_vacancy_salary'>
-                        Salary - {vacancy.salary} / month
+                        Оплата: {vacancy.salary}
                     </span>
                 </div>
                 <div className='full_vacancy_text'>
-                    <p className='full_vacancy_text_title'>Working conditions and documents</p>
+                    <p className='full_vacancy_text_title'>Условия работы и документы</p>
                     <p className='full_vacancy_main_text'>{vacancy.text}</p>
                     <ul className='full_vacancy_options_list'>
                         {vacancy.details?.map(detail =>
-                            <li className='full_vacancy_option' key={detail.id}>{detail.option}</li>
+                            <li className='full_vacancy_option' key={detail.id}>
+                                {detail.option}
+                            </li>
                         )}
                     </ul>
                 </div>
-                <button className='full_vacancy_apply_button' onClick={() => navigate('/contact')}>Подать заявку</button>
+                <button className='full_vacancy_apply_button' onClick={() => navigate('/contact')}>Откликнуться</button>
             </div>
         </div>
     );

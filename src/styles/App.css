@@ -357,7 +357,7 @@ body {
 .full_vacancy_option {
     font-size: 14px;
     line-height: 1.8;
-    text-decoration: underline .2px;
+    text-decoration: underline 1px;
     text-underline-position: under;
     padding: 4px 0;
 }
@@ -749,7 +749,7 @@ body {
         line-height: 1.1;
     }
     .full_vacancy_main_text {
-        font-size: 12px;
+        font-size: 13px;
     }
     .full_vacancy_salary {
         font-size: 14px;

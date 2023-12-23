@@ -9,7 +9,7 @@ const IntroBlock = () => {
             <div className='container'>
                 <div className='intro_inner'>
                     <h1 className='title'>
-                        <span className='intro_title_text'>Рабdота в Европе</span>
+                        <span className='intro_title_text'>Работа в Европе</span>
                         <img src={ globe } className='intro_flag' alt=""/>
                     </h1>
                 </div>

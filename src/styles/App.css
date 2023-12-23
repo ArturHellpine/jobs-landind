@@ -357,7 +357,7 @@ body {
 .full_vacancy_option {
     font-size: 14px;
     line-height: 1.8;
-    text-decoration: underline 1px;
+    text-decoration: underline;
     text-underline-position: under;
     padding: 4px 0;
 }

@@ -1,9 +1,9 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import {useNavigate} from "react-router-dom";
 import arrowBack from '../images/arrow-back-long-svgrepo-com.svg'
 import sendIcon from '../images/send-svgrepo-com.svg'
 import contactIcon from '../images/contacts-alt-svgrepo-com.svg'
+import { useNavigate } from "react-router-dom";
 
 const ContactFormPage = () => {
     const formRef = useRef()
@@ -25,13 +25,14 @@ const ContactFormPage = () => {
         <div className='contact_page'>
             <div className='single_div'></div>
             <button className='back_button button' onClick={() => navigate('/home')}>
-                <img src={arrowBack} className='arrowBack' alt=""/>
+                <img src={ arrowBack } className='arrowBack' alt=""/>
                 <span>Назад</span>
             </button>
-            <form onSubmit={sendEmail} ref={formRef} className='contacts_form'>
+
+            <form onSubmit={sendEmail} ref={ formRef } className='contacts_form'>
                 <h4 className='contact_form_title'>
                     <span>Заполните форму</span>
-                    <img src={contactIcon} className='contact_icon' alt=""/>
+                    <img src={ contactIcon } className='contact_icon' alt=""/>
                 </h4>
 
                 <div className='input_item'>
@@ -70,15 +71,16 @@ const ContactFormPage = () => {
                 <div className='input_item'>
                     <label className='contact_label'>Какая вакансия вас интересует?</label>
                     <input
-                        required
                         className='input'
                         name="message"
                         placeholder='Напишите сообщение..'
+                        required
                     />
                 </div>
+
                 <button className='submit_contact_btn button'>
                     <span>Отправить заявку</span>
-                    <img src={sendIcon} className='sendIcon' alt=""/>
+                    <img src={ sendIcon } className='sendIcon' alt=""/>
                 </button>
             </form>
         </div>

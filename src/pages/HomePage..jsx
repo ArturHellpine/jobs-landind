@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {countries} from "../constants/countries";
-import JobList from "../components/JobList";
 import JobsService from "../api/JobsService";
+import JobList from "../components/JobList";
 import IntroBlock from "../components/IntroBlock";
 import Footer from "../components/Footer";
-import {Link} from "react-scroll";
+import { countries } from "../constants/countries";
+import { Link } from "react-scroll";
 
 const HomePage = () => {
     const [vacancies, setVacancies] = useState([])
@@ -27,19 +27,19 @@ const HomePage = () => {
                                 <Link
                                     className='button country_btn'
                                     onClick={() => fetchVacancies(country)}
-                                    key={country.name}
+                                    key={ country.name }
                                     to='jobs_inner'
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={1000}>
+                                    spy={ true }
+                                    smooth={ true }
+                                    offset={ 0 }
+                                    duration={ 1000 }>
                                     { country.name }
                                 </Link>
                             )}
                         </div>
                         { !vacancies.length && country ?
-                            <p className='no_vacancies_title'>Нет активных вакансий в <span className='no_vacancy_country'>{country}</span></p>
-                            : <JobList vacancies={vacancies} country={country} />
+                            <p className='no_vacancies_title'>Нет активных вакансий в <span className='no_vacancy_country'>{ country }</span></p>
+                            : <JobList vacancies={ vacancies } country={ country } />
                         }
                     </div>
                 </div>

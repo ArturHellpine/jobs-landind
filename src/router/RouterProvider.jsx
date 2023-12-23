@@ -1,8 +1,8 @@
 import React from 'react';
-import {Navigate, Route, Routes} from "react-router-dom";
 import HomePage from "../pages/HomePage.";
 import ContactFormPage from "../pages/ContactFormPage";
 import SuccessPage from "../pages/SuccessPage";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 const RouterProvider = () => {
     return (

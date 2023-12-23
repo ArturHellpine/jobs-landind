@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import location from '../images/location-pin-svgrepo-com.svg'
 import jobIcon from '../images/employee-id-svgrepo-com.svg'
 import FullVacancyModal from "./FullVacancyModal";
@@ -15,7 +15,9 @@ const JobList = ({ vacancies, country }) => {
     return (
         <>
             { country &&
-                <h1 className='jobs_title'>Активные вакансии в <span className='title_country'>{country} ({vacancies.length})</span></h1>
+                <h1 className='jobs_title'>
+                    Активные вакансии в <span className='title_country'>{ country } ({ vacancies.length })</span>
+                </h1>
             }
             <div className='jobs_inner'>
                 {vacancies.map(vacancy =>

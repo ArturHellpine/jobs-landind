@@ -4,13 +4,13 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer_item'>
-                iren.nuga@gmail.com
+                andriy.bachynskjj@gmail.com
             </div>
             <div className='footer_item'>
-                WhatsApp, Viber +420 608 68 5490 - Ирина
+                WhatsApp, Viber +380 67 790 3538 - Андрей
             </div>
             <div className='copyright'>
-                © 2023 Все права защищены
+                © 2024 Все права защищены
             </div>
         </div>
     );

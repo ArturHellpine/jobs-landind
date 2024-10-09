@@ -7,7 +7,7 @@ const Footer = () => {
                 iren.nuga@gmail.com
             </div>
             <div className='footer_item'>
-                WhatsApp, Viber +420 608 685 490 - Ирина
+                WhatsApp, Viber + 420 608 685 490- Ирина
             </div>
             <div className='copyright'>
                 © 2024 Все права защищены
